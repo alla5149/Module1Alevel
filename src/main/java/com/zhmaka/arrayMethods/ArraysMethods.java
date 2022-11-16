@@ -23,7 +23,7 @@ public class ArraysMethods {
         }else {
             System.out.println("Длинна массива меньше 10");
         }
-        return getArray(); // чтобы вернуться в начало и повторить попытку ввода нужной длинны
+        return getArray();
     }
 
 
