@@ -3,7 +3,7 @@ package com.zhmaka.arrayMethods;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Lock {
+public class Lock{
     private final int[] array;
 
     public Lock(final int[] array){
@@ -16,5 +16,4 @@ public class Lock {
     public void printArray() {
         System.out.println(Arrays.toString(array));
     }
-
 }

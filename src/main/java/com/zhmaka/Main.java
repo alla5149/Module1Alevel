@@ -20,7 +20,5 @@ public class Main {
         lock.printArray();
         lock.getArray()[0] = 10;
         lock.printArray();
-
-
     }
 }
