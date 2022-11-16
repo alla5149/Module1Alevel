@@ -12,14 +12,20 @@ public class ArraysMethods {
     public int[] getArray() {
         System.out.println("Введите длинну масива, который будет больше или равен 10");
         int sizeArray = input.nextInt();
-        int[] array = new int[sizeArray];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 200 - 100);
+        if(sizeArray >= 10) {
+            int[] array = new int[sizeArray];
+            for (int i = 0; i < array.length; i++) {
+                array[i] = (int) (Math.random() * 200 - 100);
+            }
+            String intAString = Arrays.toString(array);
+            System.out.println(intAString);
+            return array;
+        }else {
+            System.out.println("Длинна массива меньше 10");
         }
-        String intAString = Arrays.toString(array);
-        System.out.println(intAString);
-        return array;
+        return getArray(); // чтобы вернуться в начало и повторить попытку ввода нужной длинны
     }
+
 
     public int sortBy(int[] array) {
         int answer = 0;
